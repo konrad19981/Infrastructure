@@ -1,0 +1,96 @@
+Manifest-Version: 1.0
+Implementation-Title: Google APIs Client Library for Java
+Bundle-Description: The Google API Client Library for Java provides fu
+ nctionality common to all Google APIs; for example HTTP transport, er
+ ror handling, authentication, JSON parsing, media download/upload, an
+ d batching.
+Automatic-Module-Name: google.api.client
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.google.api.client.googleapis
+Implementation-Version: 2.2.0
+Bnd-LastModified: 1674749351275
+Bundle-ManifestVersion: 2
+Bundle-DocURL: https://developers.google.com/api-client-library/java/
+Bundle-Vendor: Google
+Import-Package: com.google.api.client.auth.oauth2;version="[1.34,2)",c
+ om.google.api.client.auth.openidconnect;version="[1.34,2)",com.google
+ .api.client.googleapis,com.google.api.client.googleapis.auth.oauth2,c
+ om.google.api.client.googleapis.batch,com.google.api.client.googleapi
+ s.batch.json,com.google.api.client.googleapis.json,com.google.api.cli
+ ent.googleapis.media,com.google.api.client.googleapis.mtls,com.google
+ .api.client.googleapis.notifications,com.google.api.client.googleapis
+ .services,com.google.api.client.googleapis.services.json,com.google.a
+ pi.client.googleapis.testing,com.google.api.client.googleapis.util,co
+ m.google.api.client.http;version="[1.42,2)",com.google.api.client.htt
+ p.apache.v2;version="[1.42,2)",com.google.api.client.http.javanet;ver
+ sion="[1.42,2)",com.google.api.client.http.json;version="[1.42,2)",co
+ m.google.api.client.json;version="[1.42,2)",com.google.api.client.jso
+ n.gson,com.google.api.client.json.webtoken;version="[1.42,2)",com.goo
+ gle.api.client.testing.http;version="[1.42,2)",com.google.api.client.
+ util;version="[1.42,2)",com.google.api.client.util.store;version="[1.
+ 42,2)",com.google.common.base;version="[31.1,32)",com.google.common.c
+ ollect;version="[31.1,32)",com.google.common.io;version="[31.1,32)",j
+ avax.net.ssl,org.apache.http.client,org.apache.http.config,org.apache
+ .http.conn,org.apache.http.conn.routing,org.apache.http.conn.socket,o
+ rg.apache.http.conn.ssl,org.apache.http.impl.client,org.apache.http.i
+ mpl.conn
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-6.3.1.202206071316
+Implementation-Vendor: Google
+Export-Package: com.google.api.client.googleapis;uses:="com.google.api
+ .client.http";version="2.2.0",com.google.api.client.googleapis.auth.o
+ auth2;uses:="com.google.api.client.auth.oauth2,com.google.api.client.
+ auth.openidconnect,com.google.api.client.http,com.google.api.client.j
+ son,com.google.api.client.json.webtoken,com.google.api.client.util,co
+ m.google.api.client.util.store";version="2.2.0",com.google.api.client
+ .googleapis.media;uses:="com.google.api.client.http,com.google.api.cl
+ ient.util";version="2.2.0",com.google.api.client.googleapis.compute;u
+ ses:="com.google.api.client.auth.oauth2,com.google.api.client.http,co
+ m.google.api.client.json,com.google.api.client.util";version="2.2.0",
+ com.google.api.client.googleapis.apache.v2;uses:="com.google.api.clie
+ nt.googleapis.mtls,com.google.api.client.http.apache.v2";version="2.2
+ .0",com.google.api.client.googleapis.mtls;uses:="com.google.api.clien
+ t.json";version="2.2.0",com.google.api.client.googleapis.javanet;uses
+ :="com.google.api.client.googleapis.mtls,com.google.api.client.http.j
+ avanet";version="2.2.0",com.google.api.client.googleapis.util;uses:="
+ com.google.api.client.http,com.google.api.client.json";version="2.2.0
+ ",com.google.api.client.googleapis.services;uses:="com.google.api.cli
+ ent.googleapis.batch,com.google.api.client.googleapis.media,com.googl
+ e.api.client.http,com.google.api.client.util";version="2.2.0",com.goo
+ gle.api.client.googleapis.services.json;uses:="com.google.api.client.
+ googleapis.batch,com.google.api.client.googleapis.batch.json,com.goog
+ le.api.client.googleapis.json,com.google.api.client.googleapis.servic
+ es,com.google.api.client.http,com.google.api.client.json,com.google.a
+ pi.client.util";version="2.2.0",com.google.api.client.googleapis.noti
+ fications;uses:="com.google.api.client.util,com.google.api.client.uti
+ l.store";version="2.2.0",com.google.api.client.googleapis.notificatio
+ ns.json;uses:="com.google.api.client.googleapis.notifications,com.goo
+ gle.api.client.json,com.google.api.client.util";version="2.2.0",com.g
+ oogle.api.client.googleapis.batch;uses:="com.google.api.client.http,c
+ om.google.api.client.util";version="2.2.0",com.google.api.client.goog
+ leapis.batch.json;uses:="com.google.api.client.googleapis.batch,com.g
+ oogle.api.client.googleapis.json,com.google.api.client.http";version=
+ "2.2.0",com.google.api.client.googleapis.testing;version="2.2.0",com.
+ google.api.client.googleapis.testing.auth.oauth2;uses:="com.google.ap
+ i.client.auth.oauth2,com.google.api.client.googleapis.auth.oauth2,com
+ .google.api.client.http,com.google.api.client.json,com.google.api.cli
+ ent.testing.http,com.google.api.client.util";version="2.2.0",com.goog
+ le.api.client.googleapis.testing.compute;uses:="com.google.api.client
+ .http,com.google.api.client.testing.http";version="2.2.0",com.google.
+ api.client.googleapis.testing.services;uses:="com.google.api.client.g
+ oogleapis.services,com.google.api.client.http,com.google.api.client.u
+ til";version="2.2.0",com.google.api.client.googleapis.testing.service
+ s.json;uses:="com.google.api.client.googleapis.services,com.google.ap
+ i.client.googleapis.services.json,com.google.api.client.http,com.goog
+ le.api.client.json";version="2.2.0",com.google.api.client.googleapis.
+ testing.notifications;uses:="com.google.api.client.googleapis.notific
+ ations";version="2.2.0",com.google.api.client.googleapis.testing.json
+ ;uses:="com.google.api.client.googleapis.json,com.google.api.client.j
+ son";version="2.2.0",com.google.api.client.googleapis.json;uses:="com
+ .google.api.client.http,com.google.api.client.json,com.google.api.cli
+ ent.util";version="2.2.0"
+Bundle-Name: Google APIs Client Library for Java
+Bundle-Version: 2.2.0
+Build-Jdk-Spec: 1.8
+Created-By: Apache Maven Bundle Plugin 5.1.8
+

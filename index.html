@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projekt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Witamy w Firebase App</h1>
+    <script src="app.js"></script>
+    <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" id="email">
+                <input type="password" placeholder="Password" id="password">
+                <button type="submit">Log in</button>
+            </form>
+            <div id="loginError" class="error"></div>
+        </div>
+
+        <div class="tasks">
+            <h2>Your Tasks</h2>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="task-form">
+            <h2>Add/Edit Task</h2>
+            <form id="taskForm">
+                <input type="text" placeholder="Title" id="taskTitle">
+                <textarea placeholder="Description" id="taskDescription"></textarea>
+                <select id="taskStatus">
+                    <option value="todo">To Do</option>
+                    <option value="inprogress">In Progress</option>
+                    <option value="done">Done</option>
+                </select>
+                <button type="submit">Save Task</button>
+            </form>
+            <div id="taskError" class="error"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="login.js"></script>
+    <script src="tasks.js"></script>
+    <script src="addTask.js"></script>
+    <script src="deleteTask.js"></script>
+    <script src="editTask.js"></script>
+
+</body>
+</html>
